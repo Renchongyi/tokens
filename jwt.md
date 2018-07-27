@@ -115,7 +115,7 @@ If you want to play with JWT and put these concepts into practice, you can use [
 
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned and must be saved locally (typically in local storage, but cookies can be also used), instead of the traditional approach of creating a session in the server and returning a cookie.
 
-> You __must__ [verify a JWT's signature](/tokens/id-token#verify-the-signature) before storing and using it.
+> You __must__ [verify a JWT's signature](/id-token.md#verify-the-signature) before storing and using it.
 
 Whenever the user wants to access a protected route or resource, the user agent should send the JWT, typically in the **Authorization** header using the **Bearer** schema. The content of the header should look like the following:
 
